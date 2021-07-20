@@ -1,0 +1,10 @@
+body{
+    background-image: url("img/bg.jpg");
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.la-carte-btn {
+    margin-top: 675px;
+    margin-left: 47.5%;
+}
