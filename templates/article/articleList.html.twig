@@ -1,0 +1,13 @@
+{% extends 'article/base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block main %}
+    {% for i in '1'..'10' %}
+        <div class="pizza">
+        <img class="w20" src="{{ asset("img_Pizza/image1.jpg") }}" alt="Image de pizza">
+        <div class="w20"><label for="Commentaire">Commantaire de la pizza</label>
+        <input type="text" id="Commentaire"></div>
+        </div>
+    {% endfor %}
+{% endblock %}

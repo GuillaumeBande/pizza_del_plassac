@@ -1,10 +1,63 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg{
     background-image: url("img/bg.jpg");
-    height: 90vh;
+    height: 97vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .la-carte-btn {
-    margin-top: 675px;
     margin-left: 47.5%;
+    margin-top: -10%;
+}
+nav>ul{
+    justify-content:space-between;
+}
+.block{
+    width: 40%;
+    float: right;
+}
+.nav-barre {
+    background-color: #720000;
+    height: 7vh;
+    width: 100%;
+}
+nav {
+    align-content: center;
+    margin: 10px 40px 10px auto;
+}
+a{
+    text-decoration: none;
+    color: wheat;
+}
+a:hover{
+    color: white;
+}
+.test{
+    height: 100vh;
+    width: 200px;
+    background-color: crimson;
+}
+.form{
+    width: 34%;
+    display: grid;
+    margin-left: 32%;
+    margin-top: 12%;
+}
+input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.w20{
+    width: 20%;
+}
+.carousel-inner{
+    width: 100%;
+    height: 80vh;
+}
+.pizza{
+    display: inline-grid;
+    width: 49%;
 }

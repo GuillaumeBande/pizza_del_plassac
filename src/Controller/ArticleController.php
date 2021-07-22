@@ -19,4 +19,48 @@ class ArticleController extends AbstractController
         ]);
 
     }
+    /**
+     * @Route("/article/list", name="articleList")
+     */
+    public function articleList(): Response
+    {
+        return $this->render('article/articleList.html.twig', [
+            'title' => "La carte",
+
+        ]);
+
+    }
+    /**
+     * @Route("contact", name="contact")
+     */
+    public function contact(): Response
+    {
+        return $this->render('article/contact.html.twig', [
+            'title' => "Contact",
+
+        ]);
+
+    }
+    /**
+     * @Route("/restaurant", name="restaurant")
+     */
+    public function restaurant(): Response
+    {
+        return $this->render('article/restaurant.html.twig', [
+            'title' => "Restaurant",
+
+        ]);
+
+    }
+    /**
+     * @Route("/reservation", name="reservation")
+     */
+    public function reservation(): Response
+    {
+        return $this->render('article/reservation.html.twig', [
+            'title' => "Réservation",
+
+        ]);
+
+    }
 }
