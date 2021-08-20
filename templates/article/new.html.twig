@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<title>New Article</title>
+
+{% block body %}
+    <h1>Create new Article</h1>
+
+    {{ include('article/_form.html.twig') }}
+
+
+
+    <a href="{{ path('article_index') }}">back to list</a>
+
+
+    <h1>Adding a new product</h1>
+
+{#    {{ form_start(form) }}#}
+{#    #}{# ... #}
+
+{#    {{ form_row(form.brochure) }}#}
+{#    {{ form_end(form) }}#}
+{% endblock %}

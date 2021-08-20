@@ -36,6 +36,32 @@ class Article
      * @ORM\Column(type="string", length=255)
      */
     private $picture;
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $brochureFilename;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $image;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $brochure;
+
+    public function getBrochureFilename()
+    {
+        return $this->brochureFilename;
+    }
+
+    public function setBrochureFilename($brochureFilename): Article
+    {
+        $this->brochureFilename = $brochureFilename;
+
+        return $this;
+    }
 
     public function getId(): ?int
     {
@@ -86,6 +112,30 @@ class Article
     public function setPicture(string $picture): self
     {
         $this->picture = $picture;
+
+        return $this;
+    }
+
+    public function getImage(): ?string
+    {
+        return $this->image;
+    }
+
+    public function setImage(?string $image): self
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    public function getBrochure(): ?string
+    {
+        return $this->brochure;
+    }
+
+    public function setBrochure(string $brochure): self
+    {
+        $this->brochure = $brochure;
 
         return $this;
     }
