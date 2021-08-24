@@ -17,7 +17,7 @@
             </tr>
             <tr>
                 <th>Contenue</th>
-                <td>{{ article.content }}</td>
+                <td>{{ article.description }}</td>
             </tr>
             <tr>
                 <th>Prix</th>
@@ -25,8 +25,11 @@
             </tr>
             <tr>
                 <th>Picture</th>
-                <td>{{ article.picture }}</td>
+                <td>{{ article.imageUrl }}</td>
             </tr>
+            <tr class="imageDimention">
+             <img class="imageDimention" src="{{ asset('./ArticleImages/'~article.title~'.png')}}" alt">
+             </tr>
         </tbody>
     </table>
 

@@ -1,0 +1,22 @@
+{% extends 'article/base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block main %}
+    <div class="form">
+        <p>Pour toute demande de réservation, veuillez completer ce formulaire :</p>
+        <label for="Name">Votre nom :</label>
+        <input type="text" placeholder="Nom" id="Name" required>
+        <label for="Firstname">Votre prénom</label>
+        <input type="text" placeholder="Prénom" id="Firstname" required>
+        <label for="Email">Votre Mail :</label>
+        <input type="email" placeholder="Mail" id="Email" required>
+        <label for="NumberPhone">Votre numéro de téléphone :</label>
+        <input type="tel" placeholder="Numéro de téléphone" id="NumberPhone" >
+        <label for="NumberPerson">Nombre de personne :</label>
+        <input type="text" id="NumberPerson" placeholder="Nombre de personne" required>
+        <label for="Occasion">Pour quelle occasion :</label>
+        <input type="text" id="Occasion" placeholder="Occasion" required>
+        <input type="submit" value="Envoyer">
+    </div>
+{% endblock %}

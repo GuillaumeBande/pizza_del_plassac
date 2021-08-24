@@ -21,7 +21,7 @@ nav>ul{
 }
 .nav-barre {
     background-color: #720000;
-    height: 7vh;
+    height: 6vh;
     width: 100%;
 }
 nav {
@@ -67,7 +67,7 @@ input{
     width: 60%;
 }
 .article-title{
-    width: 25%;
+    width: 0%;
 }
 .flex{
     display: flex;
@@ -84,3 +84,23 @@ input{
     margin-right: 25%;
     margin-top: 3%;
 }
+.imageRedimention{
+    width: 80%;
+}
+/*video {*/
+/*    object-fit: cover;*/
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+/*    position: fixed;*/
+/*    top: 50px;*/
+/*    left: 0;*/
+/*}*/
+/*.viewport-header {*/
+/*    position: relative;*/
+/*    height: 50vh;*/
+/*    text-align: center;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+

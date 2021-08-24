@@ -23,45 +23,19 @@ class Article
     private $title;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="text")
      */
-    private $content;
+    private $description;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="decimal", precision=4, scale=2)
      */
     private $price;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $picture;
-    /**
-     * @ORM\Column(type="string")
-     */
-    private $brochureFilename;
-
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    private $image;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $brochure;
-
-    public function getBrochureFilename()
-    {
-        return $this->brochureFilename;
-    }
-
-    public function setBrochureFilename($brochureFilename): Article
-    {
-        $this->brochureFilename = $brochureFilename;
-
-        return $this;
-    }
+    private $imageUrl;
 
     public function getId(): ?int
     {
@@ -80,14 +54,14 @@ class Article
         return $this;
     }
 
-    public function getContent(): ?string
+    public function getDescription(): ?string
     {
-        return $this->content;
+        return $this->description;
     }
 
-    public function setContent(string $content): self
+    public function setDescription(string $description): self
     {
-        $this->content = $content;
+        $this->description = $description;
 
         return $this;
     }
@@ -104,39 +78,19 @@ class Article
         return $this;
     }
 
-    public function getPicture(): ?string
+    public function getImageUrl(): ?string
     {
-        return $this->picture;
+        return $this->imageUrl;
     }
 
-    public function setPicture(string $picture): self
+    public function setImageUrl(string $imageUrl): self
     {
-        $this->picture = $picture;
+        $this->imageUrl = $imageUrl;
 
         return $this;
     }
 
-    public function getImage(): ?string
-    {
-        return $this->image;
-    }
+    
 
-    public function setImage(?string $image): self
-    {
-        $this->image = $image;
-
-        return $this;
-    }
-
-    public function getBrochure(): ?string
-    {
-        return $this->brochure;
-    }
-
-    public function setBrochure(string $brochure): self
-    {
-        $this->brochure = $brochure;
-
-        return $this;
-    }
+    
 }
