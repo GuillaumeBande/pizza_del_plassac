@@ -1,41 +1,18 @@
 <!DOCTYPE html>
 
-<title>Article</title>
+<title>{{ article.title }}</title>
 
 {% block body %}
-    <h1>Article</h1>
 
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ article.id }}</td>
-            </tr>
-            <tr>
-                <th>Titre</th>
-                <td>{{ article.title }}</td>
-            </tr>
-            <tr>
-                <th>Contenue</th>
-                <td>{{ article.description }}</td>
-            </tr>
-            <tr>
-                <th>Prix</th>
-                <td>{{ article.price }}</td>
-            </tr>
-            <tr>
-                <th>Picture</th>
-                <td>{{ article.imageUrl }}</td>
-            </tr>
-            <tr class="imageDimention">
-             <img class="imageDimention" src="{{ asset('./ArticleImages/'~article.title~'.png')}}" alt">
-             </tr>
-        </tbody>
-    </table>
+    <h1>Détail de la pizza</h1>
 
-    <a href="{{ path('article_index') }}">back to list</a>
+    <div class="cont ">
+                <h3>{{ article.title }}</h3>
+                <h5>Contenu de la pizza :</h5>
+                <p>{{ article.description }}</p>
+                <p><b>{{ article.price }}</b></p>
+    </div>
+    <img class="imageDimention" src="{{ asset('./ArticleImages/'~article.title~'.png')}}" >
 
-    <a href="{{ path('article_edit', {'id': article.id}) }}">edit</a>
-
-    {{ include('article/_delete_form.html.twig') }}
+    <a href="{{ path('article_index') }}">Retour à la liste</a>
 {% endblock %}

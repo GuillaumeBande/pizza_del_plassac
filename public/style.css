@@ -67,7 +67,7 @@ input{
     width: 60%;
 }
 .article-title{
-    width: 0%;
+width: 100%;
 }
 .flex{
     display: flex;
@@ -85,8 +85,26 @@ input{
     margin-top: 3%;
 }
 .imageRedimention{
-    width: 80%;
+    width: 45%;
 }
+.reservation{
+    background-image: url("/imageDePizza/reservation.jpg");
+    height: 97vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+.cont{
+    float: right;
+    margin-right: 30%;
+    margin-top: 17%;
+}
+
+
 /*video {*/
 /*    object-fit: cover;*/
 /*    width: 100vw;*/
